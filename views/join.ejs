@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>WebScockets 101</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
+    <link href="/styles.css" rel="stylesheet" />
+    <style>
+      body {
+        background-image: url("../p5.jpg");
+      }
+    </style>
+  </head>
+  <body>
+    <div class="x"></div>
+    <div class="home-form">
+      <a class="home" href="/"><img class="icon" src="/logo.png" alt="" /> </a>
+      <form id="name-form" action="/join" method="post">
+        <div class="form-wrapper">
+          <input
+            id="name"
+            type="text"
+            placeholder="Enter Room Code"
+            name="link"
+          />
+          <input type="submit" class="btn h" value="Join Game" name="new" />
+          <a href="/">
+            <button class="btn h" type="button">back</button>
+          </a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

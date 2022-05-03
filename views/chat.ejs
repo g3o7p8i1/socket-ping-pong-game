@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WebScockets 101</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
+    <link href="/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <canvas width="900" height="600" id="canvas"></canvas>
+    <div class="retry"><img src="../retry.png" /></div>
+    <div class="play"><img src="../play.png" /></div>
+    <div id="mario-chat">
+      <h2>Chat</h2>
+      <div id="chat-window">
+        <div id="output"></div>
+        <div id="feedback"></div>
+      </div>
+      <input id="handle" type="text" placeholder="Handle" value="<%= uid %>" />
+      <input id="message" type="text" placeholder="Message" />
+      <input id="send" class="btn" type="submit" value="Send" />
+    </div>
+
+    <div class="link">Room Tag (click to copy) : <%= rid %></div>
+  </body>
+  <script type="text/javascript" src="/js/chat.js"></script>
+</html>

@@ -1,0 +1,222 @@
+body {
+  font-family: "Nunito";
+  background-image: url("p6.jpg");
+  background-repeat: repeat;
+  border:0;
+  margin:0;
+}
+
+
+h2 {
+  font-size: 50px;
+  padding: 0;
+  margin: 0;
+  border:none;
+  color: rgba(211, 211, 211, 0.937);
+  text-align: center;
+  background-color: #36454f;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#mario-chat {
+  position: absolute;
+  width: 20%;
+  margin: 20px 0 0 30px;
+  left: 75%;
+  top: 13%;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+#send{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#chat-window {
+  position: relative;
+  height: 50vh;
+  overflow: auto;
+  background: #f9f9f9;
+  border-left:4px solid #36454f;
+  border-right:4px solid #36454f;
+}
+
+#output p {
+  padding: 5px 0px;
+  margin: 0 20px;
+  border-bottom: 1px solid #e9e9e9;
+  color: #555;
+}
+
+#feedback p {
+  color: #aaa;
+  padding: 14px 0px;
+  margin: 0 20px;
+}
+
+#output strong {
+  color: #575ed8;
+}
+
+.link {
+  position: absolute;
+  bottom:40%;
+  display:inline-block;
+  left:40%;
+  transform: translateX(-50%);
+  font-size:15px;
+  color: 	black;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #aaa;
+  border: 2px solid black;
+  cursor:pointer;
+  padding:8px;
+}
+
+
+
+label {
+  box-sizing: border-box;
+  display: block;
+  padding: 10px 20px;
+}
+
+input {
+  padding: 10px 20px;
+  box-sizing: border-box;
+  background: #eee;
+  border: none;
+  display: block;
+  width: 100%;
+  background: #fff;
+  font-family: Nunito;
+  font-size: 16px;
+  border-left:4px solid #36454f;
+  border-right:4px solid #36454f;
+  outline: none;
+}
+
+.btn {
+  background: #36454f ;
+  color: rgba(211, 211, 211, 0.937);
+  font-size: 18px;
+  border: 0;
+  padding: 12px 0;
+  width: 100%;
+  border-radius: 0 0 2px 2px;
+}
+
+.btn:hover {
+  font-size:24px;
+  padding:9px 0;
+  cursor: pointer;
+}
+
+#canvas {
+  border-radius: 5px;
+  position: absolute;
+  background-color: rgb(168, 167, 167);
+  left:10%;
+  top:10%;
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+.home-form{
+  position: relative;
+  width:400px;
+  height:600px;
+  display:grid;
+  align-items: center;
+  left:50%;
+  top:10%;
+  transform: translateX(-50%) ;
+  background-color:#5F9EA0;
+  border-radius: 30px;
+}
+
+.icon {
+  top:5%;
+  position: relative;
+  width: 262px;
+  background-color: 	#E0E0E0;
+  padding: 60px 0 60px 0;
+  border-radius:50%;
+  margin-bottom: 10px;
+  left:50%;
+  transform: translateX(-50%) ;
+}
+
+
+.form-wrapper {
+  border-radius: 10px;
+  padding:20px;
+  height:200px;
+}
+
+#name-form input{
+  margin:10px 0 10px 0;
+  border:none;
+  border-radius: 20px;
+  height:50px;
+  background-color: 	#E0E0E0;
+}
+
+#name-form .h{
+  margin:15px 0 5px 0;
+  font-size: 24px;
+  border-radius: 20px;
+  background-color: #36454f;
+}
+
+#name-form .h:hover{
+  font-size:29px;
+}
+
+#name-form a button{
+  position: relative;
+  top:-5px;
+}
+
+.x{
+  height:70px;
+}
+
+.retry{
+  position: absolute;
+  bottom:40%;
+  display:none;
+  left:40%;
+  transform: translateX(-50%);
+  background-color: #cfcecea7;
+  cursor:pointer;
+  border-radius: 15px;
+  padding: 5px;
+}
+.play{
+  position: absolute;
+  bottom:50%;
+  display:inline-block;
+  left:40%;
+  transform: translateX(-50%);
+  background-color: #cfcecea7;
+  cursor:pointer;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+
+
+@media screen and (max-width : 800px) {
+  #mario-chat {
+    display:none;
+  }
+}
+
